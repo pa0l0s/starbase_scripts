@@ -1,0 +1,5 @@
+:ScnRslt=1 c=1000
+a=:ScnRslt b="" :Ind=0 :ScannerOn=:MM*(:MiningOn==0) :ScanA=1
+b+="\n"+:Mat+" "+:Vol/c*c if :Ind<(a-1) then :Ind+=1 goto 3 end
+:Material=b goto 2
+goto 2

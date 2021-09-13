@@ -1,0 +1,5 @@
+n="\n" s="scanning..." o="Offline" t=" stacks" p=" Ore" c=" Crystal"
+a=:MM*(:MiningOn==0) :ScannerOn=a :ScanA=a x/=(1-a) :Material=o GOTO2
+i=0 IF :ScnRslt==0 THEN :Material=s GOTO2 END D="" 
+:Ind=i D+=:Mat-p-c+n+:Vol+n+" "+((:Vol/172800)*100)+t+n 
+i+=1 IF i<:ScnRslt THEN GOTO4 ELSE :Material=D GOTO2 END

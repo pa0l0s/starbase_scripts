@@ -1,0 +1,5 @@
+if :RFinders !=1 then goto 5 END
+if :RFSL>15 then :FcuForward=5 :FcuBackward=0 else goto 3 end
+if :RFSL<15 then :FcuBackward=10 :FcuForward=0 else goto 4 end
+
+goto1

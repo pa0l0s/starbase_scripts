@@ -1,0 +1,8 @@
+if :Fire==1 then :fire1=1 :fire2=0 else :fire1=0 :fire2=0 end 
+if :Fire==1 then :fire2=1 :fire1=0 else :fire1=0 :fire2=0 end goto1
+goto1
+
+// Strzelanie 2 broniami naprzemiennie
+//Fire - guzik zbindowany do spacji
+//fire1 - strzelanie w pierwszej broni
+//fire2 - strzelanie w drugiej broni

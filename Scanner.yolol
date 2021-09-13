@@ -1,0 +1,6 @@
+n="\n"
+IF :OreScaner then :OreScan=1 GOTO3 END :MTxt="Offline" GOTO2
+i=0 IF :ScanResults==0 THEN :MTxt="scanning..." GOTO2 END D=""
+:Index=i D+=:Material-" Ore"-" Crystal"+n+:Volume  
+D+=n+" "+((:Volume/172800)*100)+" stacks"+n i+=1
+IF i<:ScanResults THEN GOTO4 ELSE :MTxt=D GOTO2 END

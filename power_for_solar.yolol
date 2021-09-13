@@ -1,0 +1,7 @@
+n="\n" u=n+"Usage: " t=n+"Time: " m=" min" c=2 //bat number
+b=:StoredBatteryPower
+
+
+o=:ConverterOutput
+d=(:StoredBatteryPower-b)*c :Power=d+u+(d-o)+t+(1000*b*c/d/60000)+m 
+b=:StoredBatteryPower goto3

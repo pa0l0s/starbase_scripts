@@ -1,0 +1,20 @@
+P=:P Y=:Y R=:R X=5 A=5 B=6 C=A/100 D=B/100
+:P+=:Boost_P*X+(:P==0)*P :P-=:Lower_P*X*(:P>5) :Boost_P=0 :Lower_P=0
+:Y+=:Boost_Y*X+(:Y==0)*Y :Y-=:Lower_Y*X*(:Y>5) :Boost_Y=0 :Lower_Y=0
+:R+=:Boost_R*X+(:R==0)*R :R-=:Lower_R*X*(:R>5) :Boost_R=0 :Lower_R=0
+P=(:P>0)*:P Y=(:Y>0)*:Y R=(:R>0)*:R :nP=-:P :xP=:P :sP=:P*D
+:nY=-:Y :xY=:Y :sY=:Y*D :nR=-:R :xR=:R :sR=:R*C goto2+:ResetSens
+
+
+
+:ResetSens=0 :P=80 :Y=80 :R=80 goto2
+
+
+
+
+
+
+
+
+//Sensitivity adjustment
+//YOLOL by QS Dageran, some changes by Duke

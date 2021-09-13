@@ -1,0 +1,20 @@
+m=5 t=12 f=1 e=0
+x/=(1-:align) goto2
+if :LockPch==1 then goto8 end
+o=:ConverterOutput :FcuRotationalPitch=20*f
+:FcuRotationalPitch=0 if :align==0 then goto 2 end r=6 goto18
+d=:ConverterOutput-o if d<0 then f*=-1 goto3 end
+if (d<m and d>0) or (e>20) then e=0 goto 8 end e+=1 goto3
+o=:ConverterOutput :FcuRotationalRoll=5*f
+:FcuRotationalRoll=0 if :align==0 then goto 2 end r=10 goto18
+d=:ConverterOutput-o if d<0 then f*=-1 goto8 end
+if (d<m and d>0) or (e>20) then e=0 goto12 end e+=1 goto8
+x/=(1-:align) goto2
+goto 1
+
+
+
+goto 1
+i=0
+i+=1 x/=(i>t) goto r
+goto 19

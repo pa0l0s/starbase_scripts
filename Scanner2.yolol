@@ -1,0 +1,9 @@
+n="\n" s="scanning..." o="Offline" p=" Ore" c=" Crystal" k=" kv"
+IF :Active then :Scan=1 GOTO3 END :MTxt=o GOTO2
+i=0 IF :ScanResults==0 THEN :MTxt=s GOTO2 END D="" 
+:Index=i D+=n+:Material-p-c+" "+((:Volume/172800)*100)+n+:Volume+k
+i+=1 IF i<:ScanResults THEN GOTO4 ELSE :MTxt=D GOTO2 END
+
+//Ore scanner script by Paolo
+//Requires button "Active" and text "MTxt"
+//Scanner first field "Active"
