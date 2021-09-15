@@ -1,6 +1,6 @@
-c=9000 g=20 d=1 e=(:MaxBatteryPower-c)/100 
+c=8000 g=20 d=1 e=(:MaxBatteryPower-c)/100 
 s=:StoredBatteryPower if :GEN>0 then l=:GEN else l=100-((s-c)/e) end
-r=:GeneratorUnitRateLimit f=r-l if f>d then l=r-d end x/=(l<g) l=g
+r=:GeneratorUnitRate f=r-l if f>d then l=r-d end x/=(l<g) l=g
 :GeneratorUnitRateLimit=l goto2
 
 //Required GEN Hybrid Button on=90 (desired rate) off=0 style=1
