@@ -1,0 +1,18 @@
+c=950
+if :cas<1 then :RangeFinderOnState=:RF goto2 end :RangeFinderOnState=1
+d=:RangeFinderDistance if d<c then goto2+(:cas*3) end goto2+(:cas*2)
+:FcuUpDown=0 if i>0 then :FcuForward=f :c=1 i=0 end goto2
+:FcuUpDown=-100 if i<1 then i=1 f=:FcuForward :FcuForward=0 end 
+:FcuBackward=100*(d>:RangeFinderDistance) goto2
+
+//note if you want to make your own cas to integrate with nav system
+//set :c=1 in your code when your cas system is engaged
+//this will let nav know it needs to realign
+
+
+//FcuUpDown
+
+//RangeFinderDistance
+//RangeFinderOnState
+//FcuForward
+//FcuBackward
