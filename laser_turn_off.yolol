@@ -1,0 +1,13 @@
+if :Fire==0 then goto 1 end
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+x/=:Fire goto 1
+:Fire=0 goto 1
+
+//burst 2s

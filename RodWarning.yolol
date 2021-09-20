@@ -1,0 +1,14 @@
+l=30000 t="Road Low: " p=", " w=0
+o=t w=0 if :r1<l then o+=1+p w=1 end if :r2<l then o+=2+p w=1 end
+if :r3<l then o+=3+p w=1 end if :r4<l then o+=4+p w=1 end
+if :r5<l then o+=5+p w=1 end if :r6<l then o+=6+p w=1 end
+if :r7<l then o+=7+p w=1 end if :r8<l then o+=8+p w=1 end
+if :r9<l then o+=9+p w=1 end if :r10<l then o+=10+p w=1 end
+if :r11<l then o+=11+p w=1 end if :r12<l then o+=12+p w=1 end
+if :r13<l then o+=13+p w=1 end if :r14<l then o+=14+p w=1 end
+if :r15<l then o+=15+p w=1 end if :r16<l then o+=16+p w=1 end
+if :r17<l then o+=17+p w=1 end if :r18<l then o+=18+p w=1 end
+if :r19<l then o+=19+p w=1 end if :r20<l then o+=20+p w=1 end
+if :r21<l then o+=21+p w=1 end if :r22<l then o+=22+p w=1 end
+if :r23<l then o+=23+p w=1 end if :r24<l then o+=24+p w=1 end
+if w==1 then :rodw=o-p else :rodw="" end goto2

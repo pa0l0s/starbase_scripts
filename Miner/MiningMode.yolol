@@ -1,0 +1,19 @@
+mm=0 d=20 s=2 x=900 c=10
+if :MiningMode>0 then :Turtle=1 :Cruise=0 goto4 end 
+if mm>0 then :MiningLaserOn=0 :Collect=0 :Scaner=0 mm=0 mn=0 end goto2
+x/=(mm-1) mm=1 :RangeFinderOnStateF=1 :Scaner=1
+r=:RangeFinderDistanceF x/=(r<d)*(r>c) :MiningLaserOn=1 mn=1 :Scaner=0
+goto2
+
+
+
+
+
+//:MiningMode
+//:RangeFinderOnStateF
+//:RangeFinderDistanceF
+//:Scaner
+//:Collect
+//:MiningLaserOn
+//:MiningLaserBeamLength
+//:LampOnF

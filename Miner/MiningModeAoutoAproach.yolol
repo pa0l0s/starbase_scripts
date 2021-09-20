@@ -1,0 +1,7 @@
+fwd=10 bac=10 c=10 x=900 d=15
+if ((2*:AutoApproach)+:MiningMode+:MAA)<2 then goto1 end goto4
+goto1
+:RangeFinderOnStateF=1 r=:RangeFinderDistanceF
+if r>d and r<x then :fwd=fwd f=r else :fwd=0 x/=(f>r) :bac=bac f=r end
+if r<c then :fwd=0 :bac=bac else :bac=0 end goto2
+goto2

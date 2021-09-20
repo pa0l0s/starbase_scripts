@@ -7,3 +7,4 @@ i+=1 IF i<:ScanResults THEN GOTO4 ELSE :MTxt=D GOTO2 END
 //Ore scanner script by Paolo
 //Requires button "Active" and text "MTxt"
 //Scanner first field "Active"
+//https://github.com/pa0l0s/starbase_scripts/

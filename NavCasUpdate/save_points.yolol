@@ -1,0 +1,10 @@
+
+x/=:Save1 :xx1=:x :yy1=:y :zz1=:z :Save1=0 
+x/=:Save2 :xx2=:x :yy2=:y :zz2=:z :Save2=0
+x/=:Save3 :xx3=:x :yy3=:y :zz3=:z :Save3=0
+x/=:Save4 :xx4=:x :yy4=:y :zz4=:z :Save4=0
+x/=:Set1 :aa=:xx1 :bb=:yy1 :cc=:zz1 :Set1=0
+x/=:Set2 :aa=:xx2 :bb=:yy2 :cc=:zz2 :Set2=0
+x/=:Set3 :aa=:xx3 :bb=:yy3 :cc=:zz3 :Set3=0
+x/=:Set4 :aa=:xx4 :bb=:yy4 :cc=:zz4 :Set4=0
+goto2

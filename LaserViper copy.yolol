@@ -1,0 +1,15 @@
+if :Fire==0 then goto1 end
+
+
+
+
+
+
+
+
+
+
+
+
+x/=:Fire :Fire1=:ff :Fire2=NOT :ff :ff=NOT :ff goto1
+:Fire1=0 :Fire2=0 goto1

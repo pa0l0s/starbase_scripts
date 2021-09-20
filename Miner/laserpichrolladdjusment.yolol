@@ -1,0 +1,2 @@
+p=-5 r=-7
+:LP1=p+:LPD :LR1=p+:LRD goto2

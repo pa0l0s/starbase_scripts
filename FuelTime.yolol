@@ -1,0 +1,17 @@
+h=3600 k=1000 f=":"
+ugo=:GasNetworkStoredResource rfo=:FuelChamberFuel x=1
+GNMR=:GasNetworkMaxResource FCMF=300000
+tg=(ugo/k*k)/(gc+1) tf=(rfo/k*k)/(rfc+1)
+lg=tg/h/k*k lgm=(tg/h-lg)*60/k*k lf=tf/h/k*k lfm=(tf/h-lf)*60/k*k
+m=(ugo/GNMR)/10*k r=(rfo/FCMF)/10*k
+if lg>100 then out="\n\nPropellant:\n"+" Inf." goto9end
+out="\n\nPropellant:\n"+lg+f+lgm x/=(lgm<10) out-=lgm out+="0"+lgm
+out+=" "+m+"%"
+if lf>1000 then out+="\n\nFuel Rod:"+" Inf." goto12end
+out+="\n\nFuel Rod: \n "+lf+f+lfm x/=(lfm<10) out-=lfm out+="0"+lfm
+out+=" "+r+"%"
+
+
+:FuelTime=out
+gc=(ugo-:GasNetworkStoredResource)/3 rfc=(rfo-:FuelChamberFuel)/3
+goto2

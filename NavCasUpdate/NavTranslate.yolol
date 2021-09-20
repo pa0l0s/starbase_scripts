@@ -1,0 +1,5 @@
+x/=(:fwd+1) :FcuForward=:fwd :fwd=-1 goto1
+x/=(:pch+1) :FcuRotationalPitch=:pch :pch=-1 goto1
+x/=(:yaw+1) :FcuRotationalYaw=:yaw :yaw=-1 goto1
+x/=(:bac+1) :FcuBackward=:bac :bac=-1 goto1
+goto1

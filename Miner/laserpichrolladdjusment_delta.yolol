@@ -1,0 +1,9 @@
+xp=30 xr=40 d=20 :LPD=0  :LRD=0
+if :RangeFinderDistanceF<d then goto1 end r=:RangeFinderDistanceF
+x/=:MiningMode x/=:MiningLaserOn :LPD=xp/(r^2) :LRD=xr/(r^2) goto2
+:LPD=0  :LRD=0 goto2
+
+
+
+//:RangeFinderOnStateF
+//:RangeFinderDistanceF
