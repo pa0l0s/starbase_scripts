@@ -1,5 +1,5 @@
 c=8000 g=20 d=1 e=(:MaxBatteryPower-c)/100 
-s=:StoredBatteryPower if :GEN>0 then l=:GEN else l=100-((s-c)/e) end
+s=:StoredBatteryPower l=100-((s-c)/e) h=:GEN x/=h if l<h then l=h end
 r=:GeneratorUnitRate f=r-l if f>d then l=r-d end x/=(l<g) l=g
 :GeneratorUnitRateLimit=l goto2
 
