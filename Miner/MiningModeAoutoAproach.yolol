@@ -1,9 +1,18 @@
-h=15 bac=100 c=8 w=900 d=16 y=250 g=h f=0 :stp=1 b=bac/c e=6 s=10
+h=20 bac=100 c=8 w=900 d=16 y=250 g=h f=0 :stp=1 b=bac/c e=5 s=10
 if (:FcuForward>0)*(:FcuForward<1) then :FcuForward=0 end
 if ((2*:AutoApproach)+:MiningMode+:MAA)<2 then f=0 goto1 end goto5
 goto1  
 :RangeFinderOnStateF=1 r=:RangeFinderDistanceF z=r/y x/=(z>1) z=1 
-g=h*z x/=(r>d)*(r<w)*(f-r<s*z) :FcuForward=g f=r :stp=0 goto8
+g=h*z x/=(r>d)*(r<w)*((f-r)<(s*z)) :FcuForward=g f=r :stp=0 goto8
 :FcuForward=0 if(f>r) then :FcuBackward=b*(f-r)*e f=r else :stp=1 end
 if r<c then :FcuForward=0 :FcuBackward=b*(c/r) else :FcuBackward=0 end
 goto3
+
+// h - max :FcuForward
+// bac - max :FcuBackward
+// c - min target distance
+// d - max target distance
+// w - max distance when start
+// y - slow down distance
+// e - barking multiplayer
+// s - max speed
