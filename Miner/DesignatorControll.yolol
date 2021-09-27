@@ -1,0 +1,3 @@
+i=-0.25 j=-0.25 h=-10
+x/=:DSC*:DSN :DR=:FcuRotationalYaw*i :DP=h+:FcuRotationalPitch*j goto2
+:DR=:DefDR :DP=:DefDP goto1

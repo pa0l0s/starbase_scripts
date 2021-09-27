@@ -1,0 +1,3 @@
+h=0.8 i=1.1 j=1.1
+x/=:DSN :LP1=h+:OY1*i :LP2=h+:OY2*i :LR1=0-:OX1*j :LR2=0-:OX2*j goto2
+:LP1=:DefLP1 :LP2=:DefLP2 :LR1=:DefLR1 :LR2=:DefLR2 goto1

@@ -1,0 +1,15 @@
+x/=:MiningMode :Designator=1 m=1 
+x/=m :Designator=0 m=0
+goto1
+
+if :MiningMode<1 then goto1 end
+:Designator=1 
+goto1
+
+//:FcuMultiplier
+
+
+//:LMinO
+//:LMaxO
+
+//not used

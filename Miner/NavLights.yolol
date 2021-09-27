@@ -1,0 +1,20 @@
+if :LampOnNavB<1 then goto1 end :LampOnNav=1
+:LampOnNav=0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ goto1
