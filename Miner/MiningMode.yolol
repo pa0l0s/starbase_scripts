@@ -1,10 +1,10 @@
 mm=0 mn=0 d=20 s=2 c=5 e=0
 if :MiningMode>0 then :Cruise=2 :Collect=1 goto4 end 
 if mm>0 then goto7 end goto2
-:Scaner=(1-:MiningLaserOn) x/=(mm-1) mm=1 :RangeFinderOnStateF=1
-r=:RangeFinderDistanceF x/=(r<d)*(r>c) :MiningLaserOn=1 mn=1
+:Scaner=(1-:MLO) x/=(mm-1) mm=1 :RangeFinderOnStateF=1
+r=:RangeFinderDistanceF x/=(r<d)*(r>c) :MLO=1 mn=1
 if mn>0 then :DSN=:MMDSN e=1 end goto2
-:MiningLaserOn=0 :Collect=0 :Scaner=0 mm=0 mn=0 x/=e :DSN=0 e=0
+:MLO=0 :Collect=0 :Scaner=0 mm=0 mn=0 x/=e :DSN=0 e=0
 goto2
 
 
@@ -14,6 +14,6 @@ goto2
 //:RangeFinderDistanceF
 //:Scaner
 //:Collect
-//:MiningLaserOn
+//:MLO
 //:MiningLaserBeamLength
 //:LampOnF

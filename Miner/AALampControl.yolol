@@ -1,0 +1,3 @@
+:LampAAR=0 :LampAAB=0
+if (((2*:AutoApproach)+:MiningMode+:MAA)*:AutoLamps)<2 then goto1 end
+:LampAAB=(:FcuForward>0) :LampAAR=(:FcuBackward>0) goto2

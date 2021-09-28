@@ -1,5 +1,5 @@
 f=-1 m=60
 x/=:MiningMode*(1-:stp) :FcuMultiplier=m goto2
-x/=:DSC*:DSN if f<0 then f=:FcuMultiplier end :FcuMultiplier=0 goto2
+x/=:DSC*:DSN if f<0 then f=:FcuMultiplier end :FcuMultiplier=0 goto3
 x/=:MiningMode if f<0 then f=:FcuMultiplier end :FcuMultiplier=m goto2
 if f>-1 then :FcuMultiplier=f f=-1 end goto1

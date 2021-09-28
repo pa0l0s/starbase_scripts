@@ -1,4 +1,4 @@
-h=20 bac=100 c=8 w=900 d=16 y=250 g=h f=0 :stp=1 b=bac/c e=5 s=10
+h=20 bac=100 c=8 w=900 d=16 y=250 g=h f=0 :stp=1 b=bac/c e=4 s=10
 if (:FcuForward>0)*(:FcuForward<1) then :FcuForward=0 end
 if ((2*:AutoApproach)+:MiningMode+:MAA)<2 then f=0 goto1 end goto5
 goto1  
@@ -16,3 +16,4 @@ goto3
 // y - slow down distance
 // e - barking multiplayer
 // s - max speed
+// :stp switch to 1 when approach procedure ends

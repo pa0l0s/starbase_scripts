@@ -1,0 +1,5 @@
+a=0
+x/=:MiningMode*:MLO*:STP :MiningLaserOn=1 a=1 goto2
+x/=:MLaser :MiningLaserOn=1 goto2
+x/=:MiningMode*:MLO*(1-:STP)*a goto2 
+:MiningLaserOn=0 a=0 goto1
