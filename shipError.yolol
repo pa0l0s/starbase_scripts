@@ -1,0 +1,4 @@
+b=:StoredBatteryPower f=:FuelChamberFuel g=:GasNetworkStoredResource
+:Error=(b<500) OR (f<1500) OR (g<5000) x/=(b>500) goto4
+:AutocannonChargeLimit=0 goto1
+:AutocannonChargeLimit=100 goto1

@@ -1,0 +1,4 @@
+c="B: " e="F: " h="G: " p="%\n" l="\n" d="AC: " j="P: " t="S: "
+b=:StoredBatteryPower f=:FuelChamberFuel g=:GasNetworkStoredResource
+a=:StoredAutocannonAmmo i=:GeneratorUnitRate s=:Speed
+:_=l+c+(b/100)+p+e+(f/3000)+p+h+(g/10000)+p+j+i+p+d+a+l+t+s goto2

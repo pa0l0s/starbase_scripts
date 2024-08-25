@@ -1,0 +1,31 @@
+
+s=:SwitchSens :sens=:BSens+(s*:MSens) :sensMin=:sens*(-1) goto1
+s=:SwitchSens :Ysens=76+(s*33) :YsensMin=:Ysens*(-1) goto1
+
+//NAME PROGRESS BAR FIELDS 
+// :sens
+// :BSens  - base sens value used on 0 pos
+// :MSens  - sens value modifier +- value on 1, -1 position
+
+// if :SwitchSens==1 then :sens ==100 :sensMin ==-100 goto5 end
+// if :SwitchSens==0 then :sens ==50 :sensMin ==-50 goto4  end
+// if :SwitchSens==-1 then :sens ==20 :sensMin ==-20 goto4 end
+// :Ysens== :sens +30 :YsensMin== :sensMin -30 goto1
+// :Ysens==100 :YsensMin==-100 goto1
+
+s=:SwitchSens :sensP=:BSensP+(s*:MSensP) :sensPMin=:sensP*(-1) goto1
+s=:SwitchSens :sensY=:BSensY+(s*:MSensY) :sensYMin=:sensY*(-1) goto1
+s=:SwitchSens :sensR=:BSensR+(s*:MSensR) :sensRMin=:sensR*(-1) goto1
+
+
+
+
+//s=:SwitchSens :LMaxO=40+(s*33) :LMinO=:LMaxO*(-1) goto1
+
+
+
+
+
+
+
+

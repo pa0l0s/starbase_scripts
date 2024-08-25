@@ -1,0 +1,2 @@
+max=:HeatSinkMaxStoredHeat o=max-(max/10)
+h=:HeatSinkStoredHeat :EnhancerActive=(h<o) goto2

@@ -1,0 +1,7 @@
+d=20 //- distance wanted Auto Approach
+x/=(1-:RangeFinderOnState) or (1-:AutoApproach) goto2
+r=:RangeFinderDistance if r>900 then goto2 end
+if r>(d+1) then :FcuForward=5 :FcuBackward=0 goto2 end
+if r<(d-1) then :FcuBackward=10 :FcuForward=0 goto2 end
+:FcuForward=0 :FcuBackward=0 goto2
+goto2

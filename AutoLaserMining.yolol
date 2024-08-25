@@ -1,0 +1,20 @@
+//:TurretPitch=64.2 
+goto2+:AL
+:TurretRotation=45 z=30 x=4 goto19
+goto2+(:AL*3)
+:TurretRotation=-45 z=30 x=6 goto19
+goto2+(:AL*5)
+goto2+(:AL*6)
+goto2+(:AL*7)
+
+
+
+
+
+
+goto1
+
+
+
+y=0
+y=y+1 if y<z then goto2+(:AL*18) end gotox //wait z back to x 

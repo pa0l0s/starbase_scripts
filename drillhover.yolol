@@ -1,0 +1,22 @@
+l=7.5 //distance from rangefinder to ship very front
+d=15  //distance to maintain from ground
+dz=2  lf=d+dz lb=d-dz //deadzone
+mf=1 mb=1 //multiplayer - forward / backward thrust multiplayer
+hd=:HoverDrill :RF=hd gito5+hd
+r=:RangeFinderDistance  goto5+((r<900)*2)
+:FcuForward=(r>(lf))*mf :FcuBackward=(r<(lb))*mb*((lb-r)*(lb-r)) goto5
+goto1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

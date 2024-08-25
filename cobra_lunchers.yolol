@@ -1,0 +1,20 @@
+e="Empty" i="Invalid tube" u="Unlocked"   
+:SelTu1=0 :SelTu2=0 goto2+:Lunchers
+m=:MissileLock1 :SelTu1=(:SelTu1+m==e+m==u+m==i)*(:SelTu1<10)
+m=:MissileLock2 :SelTu2=(:SelTu2+m==e+m==u+m==i)*(:SelTu2<10)
+goto2+:Lunchers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

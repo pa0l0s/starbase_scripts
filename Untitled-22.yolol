@@ -1,0 +1,5 @@
+goto5-((:rd<1000)*(:rd>30)*:Approach)
+
+
+
+s=:SwitchSens :sensP=:BSensP+(s*:MSensP) :sensMinP=:sensP*(-1) goto1

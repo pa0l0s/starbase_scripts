@@ -1,0 +1,7 @@
+:xThrust=:OffsetX*3 :yThrust=:OffsetY*3 goto1
+
+//V2
+// 1 basic yolo
+:xThrust=:OffsetX*12-(:Distance/100) goto1
+// 2 basic yolo
+:yThrust=:OffsetY*12-(:Distance/100) goto1

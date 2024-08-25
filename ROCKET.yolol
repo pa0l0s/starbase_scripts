@@ -1,0 +1,3 @@
+e="Empty" i="Invalid tube" u="Unlocked"
+ml=:MissileLocked :SelTu=(:SelTu+ml==e+ml==u+ml==i)*(:SelTu<10) goto2
+//made by Pfandadler

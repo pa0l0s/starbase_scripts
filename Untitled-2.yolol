@@ -1,0 +1,13 @@
+
+
+:text="Cośtam stan rakiet: " goto:4+ilosc_rakiet
+:text=:text+"BRAK RAKIET"
+:text=:text+"|" goto3
+:text=:text+"||" goto3
+:text=:text+"||" goto3
+:text=:text+"|||" goto3
+:text=:text+"||||" goto3
+:text=:text+"|||||" goto3
+:text=:text+"||||||" goto3
+:text=:text+"|||||||" goto3
+:text=:text+"||||||||" goto3

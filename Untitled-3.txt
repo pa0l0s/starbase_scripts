@@ -1,0 +1,4 @@
+if (:Hower and (:HowerH<(:H-1))) then :FcuUpDown=100  end 
+
+
+:H=:H+100*(:Add100*(:H<1000)-:Minus100*(:H>100)) goto1
